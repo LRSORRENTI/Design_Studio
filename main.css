@@ -35,7 +35,8 @@
  }
 
  #navbar a:hover {
-    color: #181818;
+    /* color: #181818; */
+    color: #5d61c1;
  }
 
  #nav-links {
@@ -72,7 +73,8 @@
  }
 
  #left-cont button {
-    background-color: #1482E8;
+    /* background-color: #1482E8; */
+    background-color: #5d61c1;
     color: #FFF;
     text-align: center;
     border-radius: 8px;
@@ -95,10 +97,11 @@
  }
 
  #hero-img {
-    width: 700px;
-    height: 500px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    width: 690px;
+    height: 380px;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    margin-top: 20px;
  }
 
 
