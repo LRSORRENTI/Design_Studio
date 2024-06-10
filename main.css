@@ -15,6 +15,7 @@
     font-style: normal;
   }
 
+  /* NAVBAR STYLES START  */
  #navbar {
     display: flex;
     justify-content: space-between;
@@ -22,6 +23,7 @@
     /* border: 2px solid blue; */
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 40px;
  }
 
  #navbar a {
@@ -39,3 +41,66 @@
  #nav-links {
     margin-top: 10px;
  }
+
+ /* NAVBAR STYLES END  */
+
+ /* HERO CONTAINER STYLES START  */
+
+ #hero-container {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+ }
+
+ #left-cont {
+    /* border: 2px solid red; */
+    margin-left: 265px;
+    width: 400px;
+    margin-top: 100px;
+ }
+
+ #left-cont h1 {
+    margin-bottom: 16px;
+    font-size: 32px;
+    font-weight: 400;
+ }
+
+ #left-cont p {
+    font-size: 24px;
+    margin-bottom: 32px;
+    font-weight: 300;
+ }
+
+ #left-cont button {
+    background-color: #1482E8;
+    color: #FFF;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 24px;
+    font-size: 20px;
+    transition: all .2s;
+    font-weight: 300;
+    border: none;
+ }
+
+ #left-cont button:hover {
+    cursor: pointer;
+    color: #d8d8d8;
+ }
+
+ #right-cont {
+    /* border: 2px solid magenta; */
+    /* display: flex;
+    justify-content: flex-end; */
+ }
+
+ #hero-img {
+    width: 700px;
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+ }
+
+
+
+ /* HERO CONTAINER STYLES END */
