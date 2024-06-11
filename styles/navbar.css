@@ -1,34 +1,15 @@
 
-  /* NAVBAR STYLES START  */
-  /* #navbar {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1097px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 40px;
- }
-
- #navbar h1 {
-   
- }
-
- #navbar a {
-    text-decoration: none;
-    padding: 20px;
-    font-size: 20px;
-    color: #858585;
-    font-weight: 300;
-    transition: 0.2s ease-in-out;
- }
-
- #navbar a:hover {
-    color: #40a3ff;
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+       transform: translateY(-20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
 }
 
- #nav-links {
-    margin-top: 10px;
- } */
 
  /* NAVBAR STYLES START */
 #navbar {
@@ -42,6 +23,7 @@
    padding: 0 20px;
    transition: 0.4s ease-in-out;
    user-select: none;
+   animation: fadeIn 1s ease-in-out;
 }
 
 #navbar h1 {
