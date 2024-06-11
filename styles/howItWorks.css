@@ -1,121 +1,7 @@
+
 /* HOW IT WORKS STYLES START */
 
 /* .h2-heading {
-    margin-top: 120px;
-    font-size: 2.5em;
-    font-weight: 400;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.home-3rd-grid, .home-4th-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.home-3rd-grid-col {
-    flex: 1 1 calc(25% - 20px);
-    max-width: calc(25% - 20px);
-    display: flex;
-}
-
-.home-4th-grid-col {
-    flex: 1 1 calc(30% - 20px);
-    max-width: calc(50% - 20px);
-    display: flex;
-    flex-direction: column;
-}
-
-.home-3rd-grid-item, .home-4th-grid-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-}
-
-.home-3rd-grid-img{
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.home-4th-grid-img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.text-content {
-    margin-bottom: 20px;
-}
-
-.h3-heading {
-    font-size: 1.5em;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.number {
-    font-size: 2em;
-    font-weight: 700;
-    color: #40a3ff;
-    margin-bottom: 10px;
-}
-
-
-.para {
-    font-size: 1.2em;
-    font-weight: 400;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.home-3rd-grid-icon {
-    width: 20px;
-    height: 20px;
-    margin: 5px;
-}
-
-.icon-wrap {
-    display: flex;
-    flex-direction: row;
-}
-
-@media screen and (max-width: 1024px) {
-    .home-3rd-grid-col {
-        flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-    .home-4th-grid-col {
-        flex: 1 1 calc(50% - 20px);
-        max-width: calc(50% - 20px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .home-3rd-grid-col {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-    .home-4th-grid-col {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-} */
-/* HOW IT WORKS STYLES END */
-
-/* HOW IT WORKS STYLES START */
-
-.h2-heading {
     margin-top: 120px;
     font-size: 2.5em;
     font-weight: 400;
@@ -153,7 +39,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
-    min-height: 300px; /* Ensure all items have a minimum height */
+    min-height: 300px; 
 }
 
 .home-3rd-grid-img{
@@ -225,6 +111,189 @@
     .home-4th-grid-col {
         flex: 1 1 100%;
         max-width: 100%;
+    }
+} */
+/* HOW IT WORKS STYLES END */
+
+/* HOW IT WORKS STYLES START */
+
+.h2-heading {
+    margin-top: 120px;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.home-3rd-grid, .home-4th-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.home-3rd-grid-col, .home-4th-grid-col {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: calc(var(--animation-order) * 0.2s);
+}
+
+.home-3rd-grid-col {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+}
+
+.home-4th-grid-col {
+    flex: 1 1 calc(30% - 20px);
+    max-width: calc(30% - 20px);
+}
+
+.home-3rd-grid-item, .home-4th-grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-height: 300px; /* Ensure all items have a minimum height */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-3rd-grid-item:hover, .home-4th-grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.home-4th-grid-img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.home-3rd-grid-img {
+    width: 100%;
+    height: 220px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: calc(var(--animation-order) * 0.2s + 0.2s);
+}
+
+.home-4th-grid-img {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInScale 1s ease-in-out forwards;
+    animation-delay: calc(var(--animation-order) * 0.2s + 0.2s);
+}
+
+.text-content, .para {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+    animation-delay: calc(var(--animation-order) * 0.2s + 0.4s);
+}
+
+.h3-heading, .number {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.para {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #8e8e8e;
+}
+
+.home-3rd-grid-icon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.icon-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.number {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #40a3ff;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .home-3rd-grid-col, .home-4th-grid-col {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-3rd-grid-col, .home-4th-grid-col {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .home-4th-grid-img {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .home-4th-grid-img {
+        height: 250px;
+        width: 300px;
+        margin: auto;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 /* HOW IT WORKS STYLES END */
