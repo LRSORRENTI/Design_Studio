@@ -1,0 +1,88 @@
+/* HOW IT WORKS STYLES START */
+
+.h2-heading {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.home-3rd-grid, .home-4th-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.home-3rd-grid-col, .home-4th-grid-col {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    display: flex;
+}
+
+.home-3rd-grid-item, .home-4th-grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-3rd-grid-img, .home-4th-grid-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    margin-bottom: 20px;
+}
+
+.h3-heading {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.number {
+    font-size: 2em;
+    font-weight: 700;
+    color: #40a3ff;
+    margin-bottom: 10px;
+}
+
+.para {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.home-3rd-grid-icon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.icon-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-3rd-grid-col, .home-4th-grid-col {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-3rd-grid-col, .home-4th-grid-col {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+/* HOW IT WORKS STYLES END */

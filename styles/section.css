@@ -2,11 +2,11 @@
 .section.home-2nd {
     margin-top: 300px;
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1150px;
     margin: auto;
     padding: 0 20px;
 }
