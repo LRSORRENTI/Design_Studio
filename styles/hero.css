@@ -1,14 +1,12 @@
 
  /* HERO CONTAINER STYLES START  */
 
- #hero-container {
-    /* border: 2px solid blue; */
+ /* #hero-container {
     display: flex;
     justify-content: space-between;
  }
 
  #left-cont {
-    /* border: 2px solid red; */
     margin-left: 220px;
     width: 400px;
     margin-top: 100px;
@@ -28,7 +26,6 @@
 
 
  #left-cont button {
-    /* background-color: #5d61c1; */
     background-image: linear-gradient(144deg,#40a3ff,#00DDEB 50%,#42f3d0  );
     color: #FFF;
     text-align: center;
@@ -40,7 +37,6 @@
     font-weight: 400;
     border: none;
     transition: 0.2s ease-in-out;
-    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -4px 0px inset; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
  }
 
@@ -60,4 +56,98 @@
     border-top-left-radius: 5em;
     border-bottom-left-radius: 5em;
     margin-top: 20px;
- }
+ } */
+
+
+/* HERO CONTAINER STYLES START */
+#hero-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1140px;
+   margin: auto;
+   padding: 20px;
+   flex-wrap: wrap;
+}
+
+#left-cont {
+   flex: 1;
+   max-width: 500px;
+   margin: 20px;
+}
+
+#left-cont h1 {
+   margin-bottom: 16px;
+   font-size: 32px;
+   font-weight: 400;
+}
+
+#left-cont p {
+   font-size: 24px;
+   margin-bottom: 32px;
+   font-weight: 300;
+}
+
+#left-cont button {
+   background-image: linear-gradient(144deg,#40a3ff,#00DDEB 50%,#42f3d0);
+   color: #FFF;
+   text-align: center;
+   border-radius: 8px;
+   padding: 8px 24px;
+   font-size: 20px;
+   letter-spacing: 1px;
+   transition: all .2s;
+   font-weight: 400;
+   border: none;
+   transition: 0.2s ease-in-out;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#left-cont button:hover {
+   cursor: pointer;
+   color: #ededed;
+   box-shadow: none;
+}
+
+#right-cont {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+}
+
+#hero-img {
+   width: 100%;
+   height: auto;
+   max-width: 750px;
+   border-top-left-radius: 5em;
+   border-bottom-left-radius: 5em;
+}
+
+@media screen and (max-width: 1024px) {
+   #hero-img {
+       max-width: 500px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   #hero-container {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   #left-cont {
+       margin: 20px 0;
+   }
+
+   #right-cont {
+       margin: 20px 0;
+   }
+
+   #hero-img {
+       max-width: 85%;
+       border-radius: 10px;
+   }
+}
+/* HERO CONTAINER STYLES END */
