@@ -28,6 +28,8 @@
 
 #navbar h1 {
    margin: 0;
+   color:#40a3ff;
+   font-weight: 380;
 }
 
 #nav-toggle {
