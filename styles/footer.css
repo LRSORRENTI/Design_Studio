@@ -53,6 +53,10 @@
     color: #1a7ccb;
 }
 
+.footer-head {
+    color:#1a7ccb;
+}
+
 @media screen and (max-width: 768px) {
     /* .footer-grid-col {
         flex: 1 1 100%;

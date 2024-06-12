@@ -97,6 +97,7 @@
  }
  
  #ready-img {
+    animation: fadeIn 1s ease-in-out;
     width: 100%;
     max-width: 500px;
     height: auto;
