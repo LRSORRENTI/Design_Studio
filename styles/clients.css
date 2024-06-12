@@ -1,0 +1,248 @@
+/* CLIENT TESTIMONIALS SECTION STYLES START */
+
+.section.home-5th {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.home-5th-top {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.h2-heading {
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.home-2nd-abs {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+}
+
+.home-2nd-abs._2nd {
+    top: 10px;
+    left: 10px;
+}
+
+.home-2nd-abs._3rd {
+    top: 10px;
+    right: 10px;
+}
+
+.home-2nd-abs._4th {
+    bottom: 10px;
+    right: 10px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-5th-grid-col {
+    flex: 1 1 45%;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.home-5th-grid-col-ins {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 250px;
+}
+
+.home-5th-grid-col-ins:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.home-5th-grid-col-ins-abs {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 10px;
+}
+
+.para-20px {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #8e8e8e;
+}
+
+.home-5th-grid-col-ins-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.home-5th-grid-col-ins-flex-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.home-5th-grid-col-ins-flex-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.para-bold {
+    font-weight: 700;
+}
+
+.slider-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-navigation button {
+    background-color: #40a3ff;
+    opacity: 70%;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-navigation button:nth-child(1){
+    padding-right: 4px;
+}
+
+.slider-navigation button:nth-child(2){
+    padding-left: 3px;
+}
+
+.slider-navigation button:hover {
+    opacity: 90%;
+    background-color: #1a7ccb;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-dots .dot.active {
+    background-color: #40a3ff;
+    opacity: 70%;
+}
+
+@media screen and (max-width: 640px) {
+    .home-5th-grid-col {
+        flex: 1 1 calc(100% - 20px);
+        max-width: calc(100% - 20px);
+    }
+
+    .slide {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* .home-5th-grid-col-ins {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: auto;
+        width: 150px;
+    } */
+    .home-5th-grid-col-ins {
+       margin-top: 10px;
+    }
+     .para-20px {
+        font-size: 14px;
+     }
+     .home-5th-grid-col-ins-flex {
+        display: flex;
+        align-items: center;
+        /* margin-top: 20px; */
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* CLIENT TESTIMONIALS SECTION STYLES END */

@@ -19,3 +19,41 @@ function closeNavOnClickOutside(event) {
     }
 }
 // END NAVBAR RELATED JS
+
+// BEGIN TESTIMONIALS JS SLIDER 
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelector('.slides');
+    const dots = document.querySelectorAll('.dot');
+    const prevSlideButton = document.querySelector('.prev-slide');
+    const nextSlideButton = document.querySelector('.next-slide');
+    let currentSlide = 0;
+
+    const updateSlider = () => {
+        const offset = -currentSlide * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentSlide);
+        });
+    };
+
+    nextSlideButton.addEventListener('click', () => {
+        currentSlide = (currentSlide + 1) % 2;
+        updateSlider();
+    });
+
+    prevSlideButton.addEventListener('click', () => {
+        currentSlide = (currentSlide - 1 + 2) % 2;
+        updateSlider();
+    });
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            updateSlider();
+        });
+    });
+
+    updateSlider();
+});
+
+// END TESTIMONIALS JS SLIDER 
