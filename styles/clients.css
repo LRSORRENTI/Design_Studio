@@ -196,20 +196,6 @@
         align-items: center;
     }
     
-    /* .home-5th-grid-col-ins {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        transition: transform 0.3s, box-shadow 0.3s;
-        height: auto;
-        width: 150px;
-    } */
     .home-5th-grid-col-ins {
        margin-top: 10px;
     }
@@ -219,7 +205,6 @@
      .home-5th-grid-col-ins-flex {
         display: flex;
         align-items: center;
-        /* margin-top: 20px; */
         margin: auto;
         flex-direction: column-reverse;
     }
