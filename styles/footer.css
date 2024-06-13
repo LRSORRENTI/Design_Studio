@@ -12,9 +12,10 @@
 
 
 .footer-grid {
+    text-align: center;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-wrap: wrap; */
     gap: 20px;
 }
 
@@ -22,13 +23,14 @@
     flex: 1;
     min-width: 100px;
     margin: auto;
-    text-align: left;
+    /* text-align: center; */
 }
 
 
 .footer-grid-col-ins-1, .footer-grid-col-ins-2 {
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
 }
 
 .footer-grid-col-ins-2-1 {
@@ -65,6 +67,10 @@
     } */
     .footer-grid-col-ins-1 {
         margin-bottom: 50px;
+    }
+
+    .footer-grid {
+        text-align: left;
     }
 
 }
