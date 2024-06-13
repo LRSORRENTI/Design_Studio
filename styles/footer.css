@@ -19,10 +19,12 @@
 }
 
 .footer-grid-col {
-    /* flex: 1; */
+    flex: 1;
     min-width: 100px;
     margin: auto;
+    text-align: left;
 }
+
 
 .footer-grid-col-ins-1, .footer-grid-col-ins-2 {
     display: flex;
@@ -57,10 +59,14 @@
     color:#1a7ccb;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 580px) {
     /* .footer-grid-col {
         flex: 1 1 100%;
     } */
+    .footer-grid-col-ins-1 {
+        margin-bottom: 50px;
+    }
+
 }
 
 /* FOOTER SECTION STYLES END */
