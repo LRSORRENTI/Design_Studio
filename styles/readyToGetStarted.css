@@ -101,8 +101,8 @@
     width: 100%;
     max-width: 500px;
     height: auto;
-    border-top-right-radius: 5em;
-    border-bottom-right-radius: 5em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
  }
  
